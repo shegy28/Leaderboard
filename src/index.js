@@ -1,21 +1,18 @@
-import _ from 'lodash';
-import printMe from './modules/print.js';
 import './style.css';
+import { submit, name, score } from './modules/const.js';
+import { addScore, renderScore, showList } from './modules/renderScore.js';
 
- function component() {
-   const element = document.createElement('div');
-   const btn = document.createElement('button');
+window.addEventListener('load', () => {
+  showList();
+});
 
-   // Lodash, now imported by this script
-   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-   element.classList.add('hello');
-
-  btn.innerHTML = 'Click me and check the console!';
-  btn.onclick = printMe;
-
-  element.appendChild(btn);
-
-   return element;
- }
-
- document.body.appendChild(component());
+submit.addEventListener('click', (e) => {
+  if (name.value === '' || score.value === '') {
+    e.preventDefault();
+    name.placeholder = 'Field cant be empty';
+    score.placeholder = 'Field cant be empty';
+  } else {
+    addScore();
+    renderScore();
+  }
+});
