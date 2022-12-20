@@ -1,7 +1,53 @@
-body {
-    background-color: bisque;
+
+h1 {
+    margin-left: 20%;
+    margin-top: 8%;
 }
 
-.hello {
-    color: red;
+.holder {
+    display: flex;
+    margin: 0 20%;
+    gap: 5%;
+}
+
+.board {
+    width: 35%;
+}
+
+.recent-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    width: 35%;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: solid black 2px;
+    padding-left:  0;
+    list-style: none;
+}
+
+li {
+    background-color: #efefef;
+    padding-left:  3%;
+}
+
+.submit {
+    width: 40%;
+    margin-left: 60%;
+}
+
+button {
+    width: 40%;
 }
