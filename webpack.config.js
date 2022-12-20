@@ -31,9 +31,5 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
       ],
    },
 
-   optimization: {
-    runtimeChunk: 'single',
-   },
-
    mode: 'none'
  };
