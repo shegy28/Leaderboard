@@ -3,7 +3,7 @@ import {
   submit, name, score, refresh,
 } from './modules/const.js';
 import {
-  addScore, refreshScore, renderScore, showList,
+  addScore, refreshScore,
 } from './modules/renderScore.js';
 
 window.addEventListener('load', () => {
@@ -17,7 +17,6 @@ submit.addEventListener('click', (e) => {
     score.placeholder = 'Field cant be empty';
   } else {
     addScore();
-    
   }
 });
 
