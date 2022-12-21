@@ -1,33 +1,35 @@
+import addApiScore from './addScore.js';
 import { name, score, leaderBoard } from './const.js';
+import getScore from './getApiScore.js';
 
 let scoreArr = [];
-const pushToLocal = () => {
-  localStorage.setItem('leaderboard', JSON.stringify(scoreArr));
-};
 
 const addScore = () => {
-  const user = {};
-  user.name = name.value;
-  user.score = score.value;
-  scoreArr.push(user);
-  pushToLocal();
+  const users = {};
+  users.user = name.value;
+  users.score = score.value;
+  scoreArr.push(users);
+  addApiScore(users);
+  name.value = '';
+  score.value = '';
 };
 
 const renderScore = () => {
   leaderBoard.innerHTML = '';
-  scoreArr.forEach((user) => {
-    const leader = `<li> ${user.name}: ${user.score}</li>`;
+  scoreArr.forEach((person) => {
+    const leader = `<li> ${person.user}: ${person.score}</li>`;
     leaderBoard.innerHTML += leader;
     name.value = '';
     score.value = '';
   });
 };
 
-const showList = () => {
-  if (localStorage.getItem('leaderboard')) {
-    scoreArr = JSON.parse(localStorage.getItem('leaderboard'));
-  }
+const refreshScore = async () => {
+  const arr = await getScore();
+  scoreArr = await arr;
   renderScore();
 };
 
-export { renderScore, addScore, showList };
+export {
+  renderScore, addScore, refreshScore,
+};

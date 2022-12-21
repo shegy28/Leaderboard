@@ -1,9 +1,13 @@
 import './style.css';
-import { submit, name, score } from './modules/const.js';
-import { addScore, renderScore, showList } from './modules/renderScore.js';
+import {
+  submit, name, score, refresh,
+} from './modules/const.js';
+import {
+  addScore, refreshScore,
+} from './modules/renderScore.js';
 
 window.addEventListener('load', () => {
-  showList();
+  refreshScore();
 });
 
 submit.addEventListener('click', (e) => {
@@ -13,6 +17,10 @@ submit.addEventListener('click', (e) => {
     score.placeholder = 'Field cant be empty';
   } else {
     addScore();
-    renderScore();
   }
+});
+
+// ID: IxtJwxspqZwRLJsMAjxT
+refresh.addEventListener('click', () => {
+  refreshScore();
 });
