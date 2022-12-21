@@ -5,5 +5,5 @@ const leaderBoard = document.getElementById('leaderboard');
 const refresh = document.getElementById('refresh');
 
 export {
-  name, score, submit, leaderBoard,refresh
+  name, score, submit, leaderBoard, refresh,
 };

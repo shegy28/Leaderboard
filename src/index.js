@@ -1,7 +1,10 @@
 import './style.css';
-import { submit, name, score, refresh } from './modules/const.js';
-import { addScore, refreshScore, renderScore, showList } from './modules/renderScore.js';
-
+import {
+  submit, name, score, refresh,
+} from './modules/const.js';
+import {
+  addScore, refreshScore, renderScore, showList,
+} from './modules/renderScore.js';
 
 window.addEventListener('load', () => {
   showList();
@@ -21,4 +24,4 @@ submit.addEventListener('click', (e) => {
 // ID: IxtJwxspqZwRLJsMAjxT
 refresh.addEventListener('click', () => {
   refreshScore();
-})
+});
