@@ -10,6 +10,8 @@ const addScore = () => {
   users.score = score.value;
   scoreArr.push(users);
   addApiScore(users);
+  name.value = '';
+    score.value = '';
 };
 
 const renderScore = () => {
@@ -31,5 +33,5 @@ const refreshScore = async () => {
 
 
 export {
-  renderScore, addScore, showList, refreshScore,
+  renderScore, addScore, refreshScore,
 };

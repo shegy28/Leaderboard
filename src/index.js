@@ -7,7 +7,7 @@ import {
 } from './modules/renderScore.js';
 
 window.addEventListener('load', () => {
-  showList();
+  refreshScore();
 });
 
 submit.addEventListener('click', (e) => {
@@ -17,7 +17,7 @@ submit.addEventListener('click', (e) => {
     score.placeholder = 'Field cant be empty';
   } else {
     addScore();
-    renderScore();
+    
   }
 });
 
