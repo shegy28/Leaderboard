@@ -483,8 +483,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "addScore": () => (/* binding */ addScore),
 /* harmony export */   "refreshScore": () => (/* binding */ refreshScore),
-/* harmony export */   "renderScore": () => (/* binding */ renderScore),
-/* harmony export */   "showList": () => (/* binding */ showList)
+/* harmony export */   "renderScore": () => (/* binding */ renderScore)
 /* harmony export */ });
 /* harmony import */ var _addScore_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(13);
 /* harmony import */ var _const_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
@@ -494,9 +493,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let scoreArr = [];
-const pushToLocal = () => {
-  localStorage.setItem('leaderboard', JSON.stringify(scoreArr));
-};
 
 const addScore = () => {
   const users = {};
@@ -504,7 +500,6 @@ const addScore = () => {
   users.score = _const_js__WEBPACK_IMPORTED_MODULE_1__.score.value;
   scoreArr.push(users);
   (0,_addScore_js__WEBPACK_IMPORTED_MODULE_0__["default"])(users);
-  pushToLocal();
 };
 
 const renderScore = () => {
@@ -523,12 +518,7 @@ const refreshScore = async () => {
   renderScore();
 };
 
-const showList = () => {
-  if (localStorage.getItem('leaderboard')) {
-    scoreArr = JSON.parse(localStorage.getItem('leaderboard'));
-  }
-  renderScore();
-};
+
 
 
 
@@ -656,7 +646,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 window.addEventListener('load', () => {
-  (0,_modules_renderScore_js__WEBPACK_IMPORTED_MODULE_2__.showList)();
+  (0,_modules_renderScore_js__WEBPACK_IMPORTED_MODULE_2__.refreshScore)();
 });
 
 _modules_const_js__WEBPACK_IMPORTED_MODULE_1__.submit.addEventListener('click', (e) => {
@@ -666,13 +656,13 @@ _modules_const_js__WEBPACK_IMPORTED_MODULE_1__.submit.addEventListener('click', 
     _modules_const_js__WEBPACK_IMPORTED_MODULE_1__.score.placeholder = 'Field cant be empty';
   } else {
     (0,_modules_renderScore_js__WEBPACK_IMPORTED_MODULE_2__.addScore)();
-    (0,_modules_renderScore_js__WEBPACK_IMPORTED_MODULE_2__.renderScore)();
+    
   }
 });
 
 // ID: IxtJwxspqZwRLJsMAjxT
 _modules_const_js__WEBPACK_IMPORTED_MODULE_1__.refresh.addEventListener('click', () => {
-  (0,_modules_renderScore_js__WEBPACK_IMPORTED_MODULE_2__.refreshScore)();
+  
 });
 
 })();
