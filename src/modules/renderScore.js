@@ -3,9 +3,6 @@ import { name, score, leaderBoard } from './const.js';
 import getScore from './getApiScore.js';
 
 let scoreArr = [];
-const pushToLocal = () => {
-  localStorage.setItem('leaderboard', JSON.stringify(scoreArr));
-};
 
 const addScore = () => {
   const users = {};
@@ -13,7 +10,6 @@ const addScore = () => {
   users.score = score.value;
   scoreArr.push(users);
   addApiScore(users);
-  pushToLocal();
 };
 
 const renderScore = () => {
@@ -32,12 +28,7 @@ const refreshScore = async () => {
   renderScore();
 };
 
-const showList = () => {
-  if (localStorage.getItem('leaderboard')) {
-    scoreArr = JSON.parse(localStorage.getItem('leaderboard'));
-  }
-  renderScore();
-};
+
 
 export {
   renderScore, addScore, showList, refreshScore,
