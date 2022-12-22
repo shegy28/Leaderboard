@@ -345,12 +345,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(10);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(11);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(12), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\r\n  font-family: 'lato', sans-serif;\r\n  font-size: 15px;\r\n}\r\n\r\nh1 {\r\n  margin-left: 19%;\r\n  margin-top: 8%;\r\n  font-size: 29px;\r\n}\r\n\r\nh2 {\r\n  font-size: 22px;\r\n}\r\n\r\n.holder {\r\n  display: flex;\r\n  margin: 0 20%;\r\n  gap: 5%;\r\n}\r\n\r\n.board {\r\n  width: 40%;\r\n}\r\n\r\n.recent-header {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  gap: 2%;\r\n}\r\n\r\n.form {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 17px;\r\n  width: 35%;\r\n}\r\n\r\ninput {\r\n  padding: 2%;\r\n  border: solid black 2px;\r\n}\r\n\r\nul {\r\n  display: flex;\r\n  flex-direction: column;\r\n  border: solid black 2px;\r\n  padding-left: 0;\r\n  list-style: none;\r\n}\r\n\r\nli {\r\n  padding: 3%;\r\n  font-weight: 700;\r\n}\r\n\r\nli:nth-child(even) {\r\n  background-color: #efefef;\r\n}\r\n\r\n.submit {\r\n  width: 70px;\r\n  display: flex;\r\n  align-self: flex-end;\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\r\n  font-family: 'lato', sans-serif;\r\n  font-size: 15px;\r\n  color: black;\r\n}\r\n\r\nbody {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\n.container {\r\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  background-position: 50% 50%;\r\n  image-rendering: -webkit-optimize-contrast;\r\n  padding-top: 2%;\r\n}\r\n\r\n.hi {\r\n  display: flex;\r\n  justify-content: center;\r\n  margin: 0;\r\n}\r\n\r\n.hi h1 {\r\n  font-size: 29px;\r\n}\r\n\r\n.holder {\r\n  display: flex;\r\n  flex-direction: column;\r\n  margin: 0 8%;\r\n  gap: 5%;\r\n}\r\n\r\nh2 {\r\n  font-size: 22px;\r\n}\r\n\r\n.board {\r\n  width: 100%;\r\n}\r\n\r\n.recent-header {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  gap: 2%;\r\n}\r\n\r\nul {\r\n  border: solid white 2px;\r\n  border-radius: 5px;\r\n  padding-left: 0;\r\n  list-style: none;\r\n  overflow-y: scroll;\r\n  height: 50vh;\r\n  width: 100%;\r\n  background-color: white;\r\n}\r\n\r\nul::-webkit-scrollbar {\r\n  display: none;\r\n}\r\n\r\n.form {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 17px;\r\n  width: 100%;\r\n}\r\n\r\ninput {\r\n  padding: 2%;\r\n  border: solid white 2px;\r\n  border-radius: 5px;\r\n}\r\n\r\nli {\r\n  padding: 3%;\r\n  font-weight: 500;\r\n}\r\n\r\nli:nth-child(even) {\r\n  background-color: rgb(231, 96, 96);\r\n  color: white;\r\n}\r\n\r\n.submit {\r\n  display: flex;\r\n  align-self: flex-end;\r\n  justify-content: center;\r\n}\r\n\r\nbutton {\r\n  background-color: #ec5242;\r\n  color: #f0f2f5;\r\n  border: 0;\r\n  width: 110px;\r\n  padding: 2%;\r\n  border-radius: 5px;\r\n}\r\n\r\n@media only screen and (min-width: 768px) {\r\n  .holder {\r\n    display: flex;\r\n    flex-direction: row;\r\n  }\r\n\r\n  .container {\r\n    height: 100vh;\r\n  }\r\n\r\n  .hi {\r\n    margin-bottom: 2%;\r\n  }\r\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -457,6 +462,43 @@ module.exports = function (cssWithMappingToString) {
 
 /***/ }),
 /* 11 */
+/***/ ((module) => {
+
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    options = {};
+  }
+  if (!url) {
+    return url;
+  }
+  url = String(url.__esModule ? url.default : url);
+
+  // If url is already wrapped in quotes, remove them
+  if (/^['"].*['"]$/.test(url)) {
+    url = url.slice(1, -1);
+  }
+  if (options.hash) {
+    url += options.hash;
+  }
+
+  // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
+  }
+  return url;
+};
+
+/***/ }),
+/* 12 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "b190d3df533764e4f333.jpg";
+
+/***/ }),
+/* 13 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -476,7 +518,7 @@ const refresh = document.getElementById('refresh');
 
 
 /***/ }),
-/* 12 */
+/* 14 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -485,9 +527,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "refreshScore": () => (/* binding */ refreshScore),
 /* harmony export */   "renderScore": () => (/* binding */ renderScore)
 /* harmony export */ });
-/* harmony import */ var _addScore_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(13);
-/* harmony import */ var _const_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
-/* harmony import */ var _getApiScore_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(14);
+/* harmony import */ var _addScore_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15);
+/* harmony import */ var _const_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(13);
+/* harmony import */ var _getApiScore_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(16);
 
 
 
@@ -500,12 +542,14 @@ const addScore = () => {
   users.score = _const_js__WEBPACK_IMPORTED_MODULE_1__.score.value;
   scoreArr.push(users);
   (0,_addScore_js__WEBPACK_IMPORTED_MODULE_0__["default"])(users);
+  _const_js__WEBPACK_IMPORTED_MODULE_1__.name.value = '';
+  _const_js__WEBPACK_IMPORTED_MODULE_1__.score.value = '';
 };
 
 const renderScore = () => {
   _const_js__WEBPACK_IMPORTED_MODULE_1__.leaderBoard.innerHTML = '';
   scoreArr.forEach((person) => {
-    const leader = `<li> ${person.user}: ${person.score}</li>`;
+    const leader = `<li> 🏆 ${person.user}: ${person.score}</li>`;
     _const_js__WEBPACK_IMPORTED_MODULE_1__.leaderBoard.innerHTML += leader;
     _const_js__WEBPACK_IMPORTED_MODULE_1__.name.value = '';
     _const_js__WEBPACK_IMPORTED_MODULE_1__.score.value = '';
@@ -520,10 +564,8 @@ const refreshScore = async () => {
 
 
 
-
-
 /***/ }),
-/* 13 */
+/* 15 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -544,7 +586,7 @@ const addApiScore = (user) => {
 
 
 /***/ }),
-/* 14 */
+/* 16 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -587,6 +629,9 @@ const getScore = async () => {
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -612,6 +657,18 @@ const getScore = async () => {
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -628,6 +685,52 @@ const getScore = async () => {
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			0: 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/nonce */
 /******/ 	(() => {
 /******/ 		__webpack_require__.nc = undefined;
@@ -639,8 +742,8 @@ var __webpack_exports__ = {};
 (() => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _modules_const_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
-/* harmony import */ var _modules_renderScore_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
+/* harmony import */ var _modules_const_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(13);
+/* harmony import */ var _modules_renderScore_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(14);
 
 
 
@@ -656,13 +759,12 @@ _modules_const_js__WEBPACK_IMPORTED_MODULE_1__.submit.addEventListener('click', 
     _modules_const_js__WEBPACK_IMPORTED_MODULE_1__.score.placeholder = 'Field cant be empty';
   } else {
     (0,_modules_renderScore_js__WEBPACK_IMPORTED_MODULE_2__.addScore)();
-    
   }
 });
 
 // ID: IxtJwxspqZwRLJsMAjxT
 _modules_const_js__WEBPACK_IMPORTED_MODULE_1__.refresh.addEventListener('click', () => {
-  
+  (0,_modules_renderScore_js__WEBPACK_IMPORTED_MODULE_2__.refreshScore)();
 });
 
 })();

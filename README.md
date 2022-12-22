@@ -71,7 +71,7 @@
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://shegy28.github.io/)
+- [Live Demo Link](https://shegy28.github.io/Leaderboard/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -101,6 +101,15 @@ Clone this repository to your desired folder:
 ```sh
   cd my-folder
   git clone https://github.com/shegy28/Leaderboard/.git
+```
+### Run On local machine
+
+To run on local machine, open your terminal and run the following:
+
+```sh
+  npm install
+  npm run build 
+  npm start
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
