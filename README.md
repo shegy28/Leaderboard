@@ -71,7 +71,7 @@
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://shegy28.github.io/)
+- [Live Demo Link](https://shegy28.github.io/Leaderboard/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
