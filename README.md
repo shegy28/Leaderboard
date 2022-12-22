@@ -102,6 +102,15 @@ Clone this repository to your desired folder:
   cd my-folder
   git clone https://github.com/shegy28/Leaderboard/.git
 ```
+### Run On local machine
+
+To run on local machine, open your terminal and run the following:
+
+```sh
+  npm install
+  npm run build 
+  npm start
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- AUTHORS -->
