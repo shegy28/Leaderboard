@@ -1,23 +1,22 @@
 * {
-    font-family: 'lato', sans-serif;
+  font-family: 'lato', sans-serif;
   font-size: 15px;
   color: black;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
-    background: url(./image/background\ top.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:50% 50%;
-    image-rendering: -webkit-optimize-contrast;
-    padding-top: 2%;
+  background: url(./image/background\ top.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  image-rendering: -webkit-optimize-contrast;
+  padding-top: 2%;
 }
 
 .hi {
@@ -27,7 +26,7 @@ body {
 }
 
 .hi h1 {
-    font-size: 29px;
+  font-size: 29px;
 }
 
 .holder {
@@ -38,7 +37,7 @@ body {
 }
 
 h2 {
-    font-size: 22px;
+  font-size: 22px;
 }
 
 .board {
@@ -54,19 +53,18 @@ h2 {
 }
 
 ul {
-    border: solid white 2px;
-    border-radius: 5px;
-    padding-left: 0;
-    list-style: none;
-    overflow-y: scroll;
-    height: 50vh;
-    width: 100%;
-    background-color: white;
-    
+  border: solid white 2px;
+  border-radius: 5px;
+  padding-left: 0;
+  list-style: none;
+  overflow-y: scroll;
+  height: 50vh;
+  width: 100%;
+  background-color: white;
 }
 
 ul::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .form {
@@ -82,17 +80,14 @@ input {
   border-radius: 5px;
 }
 
-
-
 li {
   padding: 3%;
   font-weight: 500;
-  
 }
 
 li:nth-child(even) {
   background-color: rgb(231, 96, 96);
-  color: white
+  color: white;
 }
 
 .submit {
@@ -102,26 +97,25 @@ li:nth-child(even) {
 }
 
 button {
-    background-color: #ec5242;
-    color: #f0f2f5;
-    border: 0;
-    width: 110px;
-    padding: 2%;
-    border-radius: 5px;
+  background-color: #ec5242;
+  color: #f0f2f5;
+  border: 0;
+  width: 110px;
+  padding: 2%;
+  border-radius: 5px;
 }
 
 @media only screen and (min-width: 768px) {
-    .holder {
-        display: flex;
-        flex-direction: row;
-        
-    }
-    
-    .container {
-        height: 100vh;
-    }
+  .holder {
+    display: flex;
+    flex-direction: row;
+  }
 
-    .hi {
-        margin-bottom: 2%;
-      }
+  .container {
+    height: 100vh;
+  }
+
+  .hi {
+    margin-bottom: 2%;
+  }
 }
