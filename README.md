@@ -26,9 +26,9 @@
 
 # 📖 Leaderboard List App <a name="about-project"></a>
 
-> A Leaderboard list app website that dynamically load user's score in a leader board .
+> A leaderboard that is powered by an API is a platform that displays the ranking of individuals or teams based on data obtained from an external API. The API provides the necessary data such as scores, points, or rankings which are then processed and displayed on the leaderboard in a user-friendly format.
 
-**Leaderboard List App** is a Module 2 project from microverse.
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
